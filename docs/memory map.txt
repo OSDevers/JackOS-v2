@@ -1,0 +1,16 @@
+memory size: 524288 bytes
+
+mem bank 0:
+
+0 - 2047 = stack, virtual memory segments, blah blah blah
+2048 - 10240 = screen MMIO
+10241 = Keyboard MMIO
+10242 = UART MMIO
+10243 - 10251 = digital GPIO
+10252 - 26636 = External ROM MMIO
+26637 = CableNet In
+26638 = CableNet Out
+
+mem bank 1:
+
+

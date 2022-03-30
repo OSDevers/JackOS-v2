@@ -1,0 +1,24 @@
+class File {
+	static DiskArray fh;
+	static int numoffiles;
+	
+	function void init(){
+		let fh = DiskArray.new(16348);
+	}
+	
+	function Array dumpfh() {
+		var Array temp;
+		var int i;
+		let i = 0;
+		
+		let temp = Array.new(fh.size());
+		
+		while (i < 16348) {
+			let temp[i] = fh[i];
+		}
+		
+		return temp;
+	}
+	
+	
+}
